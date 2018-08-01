@@ -126,6 +126,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
+# Spectrum
+PRODUCT_PACKAGES += \
+    init.spectrum.rc \
+    init.special_power.sh \
+    init.spectrum.sh
+
 # tri-state-key
 PRODUCT_PACKAGES += \
     KeyHandler \
