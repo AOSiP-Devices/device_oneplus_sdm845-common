@@ -43,6 +43,9 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
 
+    setprop vendor.camera.aux.packagelist "com.oneplus.camera"
+    setprop camera.hal1.packagelist "none"
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
 
@@ -54,3 +57,7 @@ service dashd /sbin/dashd
 
 service factory-hal-1-0 /system/bin/true
     disabled
+
+on property:sys.boot_completed=1
+   write /data/misc/camera/client_package_name "com.oneplus.camera"
+   chmod 0444 /data/misc/camera/client_package_name
