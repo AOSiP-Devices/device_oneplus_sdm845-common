@@ -50,6 +50,9 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
 
+    setprop vendor.camera.aux.packagelist "com.oneplus.camera"
+    setprop camera.hal1.packagelist "none"
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
 
@@ -70,6 +73,9 @@ on init
    write /proc/sys/vm/page-cluster 0
 
 on property:sys.boot_completed=1
+
+   write /data/misc/camera/client_package_name "com.oneplus.camera"
+   chmod 0444 /data/misc/camera/client_package_name
 
    # Pixel 2 LMK minfree settings
    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,55296,80640"
