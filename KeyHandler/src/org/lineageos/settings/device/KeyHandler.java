@@ -28,6 +28,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.AudioManager;
 import android.media.session.MediaSessionLegacyHelper;
+import android.os.FileObserver;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
@@ -44,12 +45,17 @@ import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 
 import org.lineageos.settings.device.utils.Constants;
+import org.lineageos.settings.device.utils.PackageUtils;
+
+import vendor.oneplus.camera.CameraHIDL.V1_0.IOnePlusCameraProvider;
 
 public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final int GESTURE_REQUEST = 1;
     private static String FPNAV_ENABLED_PROP = "sys.fpnav.enabled";
+    public static final String CLIENT_PACKAGE_NAME = "com.oneplus.camera";
+    public static final String CLIENT_PACKAGE_PATH = "/data/vendor/omni/client_package_name";
 
     private static final SparseIntArray sSupportedSliderZenModes = new SparseIntArray();
     private static final SparseIntArray sSupportedSliderRingModes = new SparseIntArray();
@@ -78,6 +84,9 @@ public class KeyHandler implements DeviceKeyHandler {
     WakeLock mGestureWakeLock;
     private int mProximityTimeOut;
     private boolean mProximityWakeSupported;
+    private ClientPackageNameObserver mClientObserver;
+    private IOnePlusCameraProvider mProvider;
+    private boolean isOPCameraAvail;
 
     public KeyHandler(Context context) {
         mContext = context;
@@ -91,6 +100,12 @@ public class KeyHandler implements DeviceKeyHandler {
         mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         if (mVibrator == null || !mVibrator.hasVibrator()) {
             mVibrator = null;
+        }
+
+        isOPCameraAvail = PackageUtils.isAvailableApp("com.oneplus.camera", context);
+        if (isOPCameraAvail) {
+            mClientObserver = new ClientPackageNameObserver(CLIENT_PACKAGE_PATH);
+            mClientObserver.startWatching();
         }
     }
 
@@ -134,4 +149,24 @@ public class KeyHandler implements DeviceKeyHandler {
         return false;
         }
 
+    private class ClientPackageNameObserver extends FileObserver {
+
+        public ClientPackageNameObserver(String file) {
+            super(CLIENT_PACKAGE_PATH, MODIFY);
+        }
+
+        @Override
+        public void onEvent(int event, String file) {
+            String pkgName = Utils.getFileValue(CLIENT_PACKAGE_PATH, "0");
+            if (event == FileObserver.MODIFY) {
+                try {
+                    Log.d(TAG, "client_package" + file + " and " + pkgName);
+                    mProvider = new IOnePlusCameraProvider();
+                    mProvider.setPackageName(pkgName);
+                } catch (RemoteException e) {
+                    Log.e(TAG, "setPackageName error", e);
+                }
+            }
+        }
+    }
 }

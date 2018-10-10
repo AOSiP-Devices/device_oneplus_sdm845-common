@@ -24,3 +24,6 @@
 
 # tri-state-key
 /system/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
+
+
+/data/vendor/omni/client_package_name                u:object_r:vendor_data_file:s0
