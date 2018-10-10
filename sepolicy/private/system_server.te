@@ -1,0 +1,2 @@
+allow system_server vendor_data_file:dir search;
+allow system_server vendor_data_file:file { read open getattr };
