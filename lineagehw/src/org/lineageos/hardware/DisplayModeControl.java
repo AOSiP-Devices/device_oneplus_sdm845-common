@@ -19,8 +19,8 @@ package org.lineageos.hardware;
 
 import android.util.Log;
 
-import lineageos.hardware.DisplayMode;
-import org.lineageos.internal.util.FileUtils;
+import com.android.internal.util.aosip.DisplayMode;
+import com.android.internal.util.aosip.FileUtils;
 
 import java.util.HashMap;
 
