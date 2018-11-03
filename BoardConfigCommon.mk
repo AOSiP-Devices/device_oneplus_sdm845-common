@@ -20,6 +20,8 @@ COMMON_PATH := device/oneplus/sdm845-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+BUILD_TOP := $(shell pwd)
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -48,8 +50,11 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 NEED_KERNEL_MODULE_SYSTEM := true
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+# GCC (Reqiures https://gitlab.com/anirudhgupta109/gcc-prebuilts/tree/8.2.1
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.2/bin
 
 # Platform
 # TARGET_BOARD_PLATFORM := sdm845
