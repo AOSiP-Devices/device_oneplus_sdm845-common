@@ -1,0 +1,11 @@
+[
+  {
+    "repository"  : "kernel_oneplus_sdm845",
+    "target_path" : "kernel/oneplus/sdm845"
+  },
+  {
+    "repository"  : "LineadeOS/android_packages_resources_devicesettings",
+    "target_path" : "packages/resources/devicesettings",
+    "branch"      : "lineage-16.0"
+  }
+]
