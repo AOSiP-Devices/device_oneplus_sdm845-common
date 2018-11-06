@@ -4,7 +4,17 @@
     "target_path" : "kernel/oneplus/sdm845"
   },
   {
-    "repository"  : "LineadeOS/android_packages_resources_devicesettings",
+    "repository"  : "vendor_oneplus",
+    "target_path" : "vendor/oneplus"
+  },
+  {
+    "repository"  : "anirudhgupta109/gcc-prebuilts",
+    "target_path" : "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.2",
+    "branch"      : "8.2.1",
+    "remote"      : "gitlab"
+  },
+  {
+    "repository"  : "LineageOS/android_packages_resources_devicesettings",
     "target_path" : "packages/resources/devicesettings",
     "branch"      : "lineage-16.0"
   }
