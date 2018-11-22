@@ -25,6 +25,8 @@ import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
 import android.text.TextUtils;
 
+import org.lineageos.settings.DisplayMode.DeviceSettings;
+
 public class Startup extends BroadcastReceiver {
 
     private void restore(String file, boolean enabled) {
@@ -45,7 +47,7 @@ public class Startup extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
-
+        boolean enabled = false;
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
         restore(SRGBModeSwitch.getFile(), enabled);
