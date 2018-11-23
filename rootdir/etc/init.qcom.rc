@@ -50,6 +50,11 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
 
+    mkdir /data/vendor/omni 0770 cameraserver audio
+    write /data/vendor/omni/client_package_name 0
+    chown cameraserver audio /data/vendor/omni/client_package_name
+    chmod 0644 /data/vendor/omni/client_package_name
+
     setprop vendor.camera.aux.packagelist "com.oneplus.camera"
     setprop camera.hal1.packagelist "none"
 
