@@ -5,6 +5,11 @@ on init
     mount none /system/lib64/hw/hwcomposer.sdm845.so /vendor/lib64/hw/hwcomposer.sdm845.so bind
     mount none /system/lib/modules/wlan.ko /vendor/lib/modules-aging/qca_cld3_wlan.ko bind
     mount none /system/lib/modules/wlan.ko /vendor/lib/modules/qca_cld3_wlan.ko bind
+    write /dev/stune/schedtune.colocate 0
+    write /dev/stune/background/schedtune.colocate 0
+    write /dev/stune/system-background/schedtune.colocate 0
+    write /dev/stune/foreground/schedtune.colocate 0
+    write /dev/stune/top-app/schedtune.colocate 0
 
 on boot
     # Fingerprint
@@ -50,6 +55,8 @@ on boot
 
     setprop vendor.camera.aux.packagelist "com.oneplus.camera"
     setprop camera.hal1.packagelist "none"
+
+    exec u:r:magisk:s0 root root -- /init.renderzenith.sh
 
 on post-fs
     chown system system /sys/class/leds/vibrator/vmax_mv_user
