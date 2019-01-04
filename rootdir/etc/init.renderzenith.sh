@@ -1,8 +1,8 @@
-#!/system/bin/sh 
+#!/system/bin/sh
 
 sleep 25;
 
-# Applying RenderZenith Settings 
+# Applying RenderZenith Settings
 
 # Setup Schedutil Governor
 	echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -11,11 +11,15 @@ sleep 25;
 	echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 	echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 
-	echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor	
+	echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 	echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
 	echo 20000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
 	echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
 	echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
+
+# Set CPU Freq to lowest possible
+        echo 300000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+        echo 825000 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
 
 # Input boost and stune configuration
 	echo "0:1056000 1:0 2:0 3:0 4:0 5:0 6:0 7:0" > /sys/module/cpu_boost/parameters/input_boost_freq
