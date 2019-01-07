@@ -58,7 +58,11 @@ on boot
     exec u:r:magisk:s0 root root -- /init.renderzenith.sh
 
 on post-fs
+    # Vibration
+    chown system system /sys/class/leds/vibrator/vmax_override
+    write /sys/class/leds/vibrator/vmax_override 1
     chown system system /sys/class/leds/vibrator/vmax_mv_user
+    chown system system /sys/class/leds/vibrator/vmax_mv_call
 
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
