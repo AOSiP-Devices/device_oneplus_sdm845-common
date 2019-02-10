@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-sleep 25;
+sleep 35;
 
 # Applying RenderZenith Settings
 
@@ -18,10 +18,6 @@ sleep 25;
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/iowait_boost_enable
 	echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
 	echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
-
-# Set CPU Freq to lowest possible
-        echo 300000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-        echo 825000 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
 
 # Input boost and stune configuration
 	echo "0:1056000 1:0 2:0 3:0 4:1056000 5:0 6:0 7:0" > /sys/module/cpu_boost/parameters/input_boost_freq
