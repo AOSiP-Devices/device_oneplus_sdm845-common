@@ -8,6 +8,37 @@ lib/com.qualcomm.qti.ant@1.0.so
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
 
+#Camera (OnePlus)
+lib64/libblurbuster.so
+lib64/libchromaflash.so
+lib64/libConnor_oneplus.so
+lib64/libdualcameraddm.so
+lib64/libfiltergenerator.so
+lib64/libhazebuster.so
+lib64/libjni_blurbuster.so
+lib64/libjni_chromaflash.so
+lib64/libjni_clearsight.so 
+lib64/libjni_dualcamera.so
+lib64/libjni_filtergenerator.so
+lib64/libjni_hazebuster.so
+lib64/libjni_makeupV2.so
+ib64/libjni_optizoom.so
+lib64/libjni_seestraight.so
+lib64/libjni_sharpshooter.so
+lib64/libjni_stillmore.so
+lib64/libjni_trueportrait.so
+lib64/libjni_truescanner_v2.so
+lib64/libjni_ubifocus.so
+lib64/libopcameralib-em.so
+lib64/libseemore.so
+lib64/libseestraight.so
+lib64/libtrueportrait.so
+lib64/libtruescanner.so
+lib64/libubifocus.so
+lib64/libts_detected_face_jni.so
+lib64/libts_face_beautify_jni.so
+lib64/libts_face_beautify_hal.so
+
 # CNE
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
