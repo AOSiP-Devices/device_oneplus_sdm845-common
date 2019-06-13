@@ -43,6 +43,11 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
     write /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm 0
 
+    mkdir /data/misc/camera 0770 cameraserver audio
+    write /data/misc/camera/client_package_name 0
+    chown cameraserver audio /data/misc/camera/client_package_name
+    chmod 0644 /data/misc/camera/client_package_name
+
 on post-fs
     # Vibration
     chown system system /sys/class/leds/vibrator/vmax_override

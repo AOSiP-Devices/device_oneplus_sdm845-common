@@ -115,6 +115,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-opcam.xml:system/etc/permissions/privapp-permissions-opcam.xml
 
+# OnePlus Camera support
+PRODUCT_PACKAGES += \
+    vendor.oneplus.camera.CameraHIDL@1.0 \
+    vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
+    vendor.oneplus.camera.CameraHIDL-V1.0-java \
+    CameraPackage \
+    OnePlusCameraService
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/etc/permissions/privapp-permissions-oem.xml:system/etc/permissions/privapp-permissions-oem.xml
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
