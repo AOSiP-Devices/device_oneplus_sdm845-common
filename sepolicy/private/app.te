@@ -1,2 +1,4 @@
-# Allow appdomain to get vendor_camera_prop
+# Allow appdomain to get some props
 get_prop(appdomain, vendor_camera_prop)
+get_prop(appdomain, camera_prop)
+get_prop(appdomain, vendor_iop_prop)
