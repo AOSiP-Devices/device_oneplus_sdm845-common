@@ -43,6 +43,8 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
     write /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm 0
 
+    setprop vendor.camera.aux.packagelist "com.oneplus.camera"
+
 on post-fs
     # Vibration
     chown system system /sys/class/leds/vibrator/vmax_override

@@ -115,6 +115,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-opcam.xml:system/etc/permissions/privapp-permissions-opcam.xml
 
+# OPCam support
+PRODUCT_PACKAGES += \
+    vendor.oneplus.camera.CameraHIDL@1.0 \
+    vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
+    vendor.oneplus.camera.CameraHIDL-V1.0-java
+PRODUCT_PACKAGES_DEBUG += \
+    CameraPackage
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
