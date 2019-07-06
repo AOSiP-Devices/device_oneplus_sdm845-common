@@ -11,6 +11,7 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Display Modes -->
     <string name="display_title">Display modes</string>
     <string name="display_summary">Adjust settings and preferences for display</string>
     <string name="srgb_mode_summary"></string>
@@ -28,4 +29,25 @@
     <string name="off_mode_title">Off</string>
     <string name="tile_panel_mode">Panel modes</string>
     <string name="tile_hbm_mode">High brightness modes</string>
+
+    <!-- Screen Off Gestures -->
+    <string name="screen_off_gestures_title">Screen off gestures</string>
+    <string name="screen_off_gestures_summary">Adjust touchscreen gestures when the screen is off</string>
+    <string name="dlg_ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="group_applications">Applications</string>
+    <string name="select_custom_app_title">Select custom application</string>
+
+    <string name="enable_gestures_title">Enable gestures</string>
+    <string name="enable_gestures_summary">Enable screen off gestures</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="gesture_arrow_down_title">Arrow down</string>
+    <string name="gesture_arrow_left_title">Arrow left</string>
+    <string name="gesture_arrow_right_title">Arrow right</string>
+    <string name="gesture_arrow_up_title">Arrow up</string>
+    <string name="gesture_circle_title">Circle</string>
+    <string name="gesture_double_swipe_title">Double finger swipe down</string>
+    <string name="gesture_double_tap_title">Double tap</string>
 </resources>

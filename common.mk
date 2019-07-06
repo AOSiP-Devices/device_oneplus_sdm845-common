@@ -78,6 +78,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan \
     DisplayMode
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/DisplayMode/overlay
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \

@@ -19,6 +19,8 @@
           android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-sdk
         android:minSdkVersion="24" />
@@ -46,8 +48,20 @@
         </activity>
 
         <activity android:name=".DeviceSettings" />
+        <activity android:name=".KeyHandler" />
 
         <activity
+            android:name="org.lineageos.settings.DisplayMode.ScreenOffGestureActivity"
+            android:exported="true"
+            android:label="@string/screen_off_gestures_title"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+       <activity
             android:name="org.lineageos.settings.DisplayMode.PanelSettingsActivity"
             android:exported="true"
             android:label="@string/panel_category_title"
