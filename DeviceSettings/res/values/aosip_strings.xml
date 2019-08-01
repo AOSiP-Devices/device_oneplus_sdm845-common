@@ -33,6 +33,13 @@
     <string name="tile_panel_mode">Panel modes</string>
     <string name="tile_hbm_mode">High brightness modes</string>
 
+    <!-- KCAL sliders -->
+    <string name="kcal_category_title">Advanced display calibration</string>
+    <string name="kcal_category_summary">Adjust screen colours by using KCal</string>
+    <string name="red_slider">Red</string>
+    <string name="green_slider">Green</string>
+    <string name="blue_slider">Blue</string>
+
     <!-- Notification slider -->
     <string name="notification_slider_category_title">Notification slider</string>
     <string name="notification_slider_selection_dialog_title">Action</string>
