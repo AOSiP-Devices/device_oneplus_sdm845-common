@@ -61,5 +61,9 @@ public class Startup extends BroadcastReceiver {
         restore(AdaptiveModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_ONEPLUS_SWITCH, false);
         restore(OnePlusModeSwitch.getFile(), enabled);
+
+        VibratorStrengthPreference.restore(context);
+        VibratorCallStrengthPreference.restore(context);
+        VibratorNotifStrengthPreference.restore(context);
     }
 }
