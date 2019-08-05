@@ -12,6 +12,9 @@
      limitations under the License.
 -->
 <resources>
+    <string name="device_title">Настройки OnePlus</string>
+    <string name="device_summary">Отрегулируйте настройки устройства OnePlus</string>
+    <!-- Display modes -->
     <string name="display_title">Режимы экрана</string>
     <string name="display_summary">Настройки и параметры экрана</string>
     <string name="srgb_mode_summary"></string>
@@ -29,4 +32,25 @@
     <string name="off_mode_title">Выкл</string>
     <string name="tile_panel_mode">Режим панелей</string>
     <string name="tile_hbm_mode">Режимы высокой яркости</string>
+    <!-- Notification slider -->
+    <string name="notification_slider_category_title">Слайдер уведомлений</string>
+    <string name="notification_slider_selection_dialog_title">Действие</string>
+    <string name="notification_slider_top_position">Верхнее положение</string>
+    <string name="notification_slider_middle_position">Среднее положение</string>
+    <string name="notification_slider_bottom_position">Нижнее положение</string>
+    <string name="notification_slider_mode_total_silence">Полная тишина</string>
+    <string name="notification_slider_mode_alarms_only">Только будильник</string>
+    <string name="notification_slider_mode_priority_only">Только важные</string>
+    <string name="notification_slider_mode_silent">Без звука</string>
+    <string name="notification_slider_mode_vibrate">Вибрация</string>
+    <string name="notification_slider_mode_none">Нормальный</string>
+    <string name="buttons_dashboard_summary">Параметры слайдера уведомлений</string>
+    <!-- Vibration control -->
+    <string name="category_vibrator">Вибрация</string>
+    <string name="vib_strength_title_head">Общая</string>
+    <string name="vib_strength_summary_head">Установить интенсивность общей вибрации</string>
+    <string name="vib_call_strength_title_head">Вызовы</string>
+    <string name="vib_call_strength_summary_head">Установить интенсивность вибрации при входящем звонке</string>
+    <string name="vib_notif_strength_title_head">Уведомления</string>
+    <string name="vib_notif_strength_summary_head">Установить интенсивность вибрации при входящем уведомлении</string>
 </resources>
