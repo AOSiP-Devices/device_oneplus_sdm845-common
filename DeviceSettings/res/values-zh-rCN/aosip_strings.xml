@@ -12,6 +12,9 @@
      limitations under the License.
 -->
 <resources>
+    <string name="device_title">一加设置</string>
+    <string name="device_summary">调整一加特定设备设置</string>
+    <!-- Display modes -->
     <string name="display_title">显示模式</string>
     <string name="display_summary">调整屏幕的设置和偏好</string>
     <string name="srgb_mode_summary"></string>
@@ -29,4 +32,25 @@
     <string name="off_mode_title">关闭</string>
     <string name="tile_panel_mode">面板模式</string>
     <string name="tile_hbm_mode">高亮度模式</string>
+    <!-- Notification slider -->
+    <string name="notification_slider_category_title">通知滑块</string>
+    <string name="notification_slider_selection_dialog_title">操作</string>
+    <string name="notification_slider_top_position">顶部位置</string>
+    <string name="notification_slider_middle_position">中间位置</string>
+    <string name="notification_slider_bottom_position">底部位置</string>
+    <string name="notification_slider_mode_total_silence">完全静音</string>
+    <string name="notification_slider_mode_alarms_only">仅限闹钟</string>
+    <string name="notification_slider_mode_priority_only">仅限优先打扰</string>
+    <string name="notification_slider_mode_silent">静音</string>
+    <string name="notification_slider_mode_vibrate">振动</string>
+    <string name="notification_slider_mode_none">正常</string>
+    <string name="buttons_dashboard_summary">三段式开关设置</string>
+    <!-- Vibration control -->
+    <string name="category_vibrator">振动</string>
+    <string name="vib_strength_title_head">系统强度</string>
+    <string name="vib_strength_summary_head">自定义振动强度</string>
+    <string name="vib_call_strength_title_head">通话强度</string>
+    <string name="vib_call_strength_summary_head">在来电期间定义振动器的强度</string>
+    <string name="vib_notif_strength_title_head">通知强度</string>
+    <string name="vib_notif_strength_summary_head">在通知期间定义振动器的强度</string>
 </resources>

@@ -12,21 +12,45 @@
      limitations under the License.
 -->
 <resources>
+    <string name="device_title">Cài đặt OnePlus</string>
+    <string name="device_summary">Điều chỉnh cài đặt cho thiết bị OnePlus</string>
+    <!-- Display modes -->
     <string name="display_title">Chế độ Hiển thị</string>
-    <string name="display_summary">Cài đặt và hiệu chỉnh màn hình thiết bị</string>
+    <string name="display_summary">Điều chỉnh cài đặt và tùy chọn màn hình</string>
     <string name="srgb_mode_summary"></string>
-    <string name="srgb_mode_title">sRGB</string>
+    <string name="srgb_mode_title">Chế độ sRGB</string>
     <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Độ sáng cao</string>
-    <string name="adaptive_mode_title">Thích nghi</string>
-    <string name="oneplus_mode_title">Mặc định OnePlus</string>
+    <string name="hbm_mode_title">Chế độ Độ sáng cao</string>
+    <string name="adaptive_mode_title">Chế độ Thích nghi</string>
+    <string name="oneplus_mode_title">Chế độ OnePlus</string>
     <string name="dci_mode_summary"></string>
-    <string name="dci_mode_title">Dải màu rộng DCI-P3</string>
+    <string name="dci_mode_title">Chế độ Dải màu rộng DCI-P3</string>
     <string name="Night_mode_summary"></string>
-    <string name="Night_mode_title">Ban đêm</string>
+    <string name="Night_mode_title">Chế độ Ban đêm</string>
     <string name="panel_category_title">Chế độ Màn hình</string>
-    <string name="panel_category_summary">Sửa màu màn hình</string>
+    <string name="panel_category_summary">Các chế độ sửa màu cho tấm nền màn hình</string>
     <string name="off_mode_title">Tắt</string>
     <string name="tile_panel_mode">Chế độ Màn hình</string>
-    <string name="tile_hbm_mode">Độ sáng cao</string>
+    <string name="tile_hbm_mode">Chế độ Độ sáng cao</string>
+    <!-- Notification slider -->
+    <string name="notification_slider_category_title">Thanh trượt thông báo</string>
+    <string name="notification_slider_selection_dialog_title">Hành động</string>
+    <string name="notification_slider_top_position">Vị trí trên cùng</string>
+    <string name="notification_slider_middle_position">Vị trí chính giữa</string>
+    <string name="notification_slider_bottom_position">Vị trí dưới cùng</string>
+    <string name="notification_slider_mode_total_silence">Hoàn toàn tắt tiếng</string>
+    <string name="notification_slider_mode_alarms_only">Chỉ báo thức</string>
+    <string name="notification_slider_mode_priority_only">Chỉ ưu tiên</string>
+    <string name="notification_slider_mode_silent">Im lặng</string>
+    <string name="notification_slider_mode_vibrate">Rung</string>
+    <string name="notification_slider_mode_none">Bình thường</string>
+    <string name="buttons_dashboard_summary">Cài đặt Thanh trượt Cảnh báo</string>
+    <!-- Vibration control -->
+    <string name="category_vibrator">Bộ rung</string>
+    <string name="vib_strength_title_head">Cường độ rung: Hệ thống</string>
+    <string name="vib_strength_summary_head">Chọn độ mạnh của bộ rung</string>
+    <string name="vib_call_strength_title_head">Cường độ rung: Cuộc gọi</string>
+    <string name="vib_call_strength_summary_head">Chọn độ mạnh của bộ rung khi có cuộc gọi đến</string>
+    <string name="vib_notif_strength_title_head">Cường độ rung: Thông báo</string>
+    <string name="vib_notif_strength_summary_head">Chọn độ mạnh của bộ rung khi có thông báo</string>
 </resources>

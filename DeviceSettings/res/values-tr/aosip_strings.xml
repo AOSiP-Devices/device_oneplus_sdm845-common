@@ -12,6 +12,9 @@
      limitations under the License.
 -->
 <resources>
+    <string name="device_title">OnePlus Ayarları</string>
+    <string name="device_summary">OnePlus\'a özel cihaz ayarlarını düzenleyin</string>
+    <!-- Display modes -->
     <string name="display_title">Görüntü modları</string>
     <string name="display_summary">Görüntü için ayarları ve tercihleri ayarlayın</string>
     <string name="srgb_mode_summary"></string>
@@ -25,8 +28,29 @@
     <string name="Night_mode_summary"></string>
     <string name="Night_mode_title">Gece modu</string>
     <string name="panel_category_title">Panel modları</string>
-    <string name="panel_category_summary">Panel rengi düzeltmesi için modlar</string>
+    <string name="panel_category_summary">Panel renk düzeltmesi için modlar</string>
     <string name="off_mode_title">Kapalı</string>
     <string name="tile_panel_mode">Panel modları</string>
-    <string name="tile_hbm_mode">Yüksek parlaklık modu</string>
+    <string name="tile_hbm_mode">Yüksek parlaklık modları</string>
+    <!-- Notification slider -->
+    <string name="notification_slider_category_title">Bildirim kaydırıcı</string>
+    <string name="notification_slider_selection_dialog_title">Eylem</string>
+    <string name="notification_slider_top_position">Üst konum</string>
+    <string name="notification_slider_middle_position">Orta konum</string>
+    <string name="notification_slider_bottom_position">Alt konum</string>
+    <string name="notification_slider_mode_total_silence">Tamamen sessiz</string>
+    <string name="notification_slider_mode_alarms_only">Yalnızca alarmlar</string>
+    <string name="notification_slider_mode_priority_only">Yalnızca öncelikli</string>
+    <string name="notification_slider_mode_silent">Sessiz</string>
+    <string name="notification_slider_mode_vibrate">Titreşim</string>
+    <string name="notification_slider_mode_none">Normal</string>
+    <string name="buttons_dashboard_summary">Uyarı kaydırıcı ayarları</string>
+    <!-- Vibration control -->
+    <string name="category_vibrator">Titreşim</string>
+    <string name="vib_strength_title_head">Sistem yoğunluğu</string>
+    <string name="vib_strength_summary_head">Titreşim yoğunluğunu tanımlayın</string>
+    <string name="vib_call_strength_title_head">Arama yoğunluğu</string>
+    <string name="vib_call_strength_summary_head">Gelen bir arama sırasında titreşim yoğunluğunu tanımlayın</string>
+    <string name="vib_notif_strength_title_head">Bildirim yoğunluğu</string>
+    <string name="vib_notif_strength_summary_head">Gelen bir bildirim sırasında titreşim yoğunluğunu tanımlayın</string>
 </resources>
