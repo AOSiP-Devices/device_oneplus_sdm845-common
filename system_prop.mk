@@ -24,7 +24,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera.disable_zsl_mode=true
+    camera.disable_zsl_mode=true \
+    vendor.camera.hal1.packagelist=com.whatsapp
 
 # Debug IMS/VoLTE props
 PRODUCT_PROPERTY_OVERRIDES += \
