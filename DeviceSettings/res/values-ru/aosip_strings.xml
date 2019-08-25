@@ -21,6 +21,8 @@
     <string name="srgb_mode_title">Режим sRGB</string>
     <string name="hbm_mode_summary"></string>
     <string name="hbm_mode_title">Режим высокой яркости</string>
+    <string name="dc_mode_summary"></string>
+    <string name="dc_mode_title">DC-Dimming</string>
     <string name="adaptive_mode_title">Адаптивный режим</string>
     <string name="oneplus_mode_title">Режим OnePlus</string>
     <string name="dci_mode_summary"></string>
@@ -32,6 +34,7 @@
     <string name="off_mode_title">Выкл</string>
     <string name="tile_panel_mode">Режим панелей</string>
     <string name="tile_hbm_mode">Режимы высокой яркости</string>
+    <string name="tile_dc_mode">DC-Dimming</string>
     <!-- Notification slider -->
     <string name="notification_slider_category_title">Слайдер уведомлений</string>
     <string name="notification_slider_selection_dialog_title">Действие</string>

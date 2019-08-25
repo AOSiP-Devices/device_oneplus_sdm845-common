@@ -21,6 +21,8 @@
     <string name="srgb_mode_title">sRGB モード</string>
     <string name="hbm_mode_summary"></string>
     <string name="hbm_mode_title">高輝度モード</string>
+    <string name="dc_mode_summary"></string>
+    <string name="dc_mode_title">DC 調光</string>
     <string name="adaptive_mode_title">自動モード</string>
     <string name="oneplus_mode_title">OnePlus モード</string>
     <string name="dci_mode_summary"></string>
@@ -32,6 +34,7 @@
     <string name="off_mode_title">OFF</string>
     <string name="tile_panel_mode">パネルモード</string>
     <string name="tile_hbm_mode">高輝度モード</string>
+    <string name="tile_dc_mode">DC 調光</string>
     <!-- Notification slider -->
     <string name="notification_slider_category_title">通知スライダー</string>
     <string name="notification_slider_selection_dialog_title">アクション</string>

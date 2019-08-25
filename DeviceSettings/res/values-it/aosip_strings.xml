@@ -21,6 +21,8 @@
     <string name="srgb_mode_title">Modalità sRGB</string>
     <string name="hbm_mode_summary"></string>
     <string name="hbm_mode_title">Modalità alta luminosità</string>
+    <string name="dc_mode_summary"></string>
+    <string name="dc_mode_title">Modalità anti-sfarfallio</string>
     <string name="adaptive_mode_title">Modalità adattiva</string>
     <string name="oneplus_mode_title">Modalità OnePlus</string>
     <string name="dci_mode_summary"></string>
@@ -32,6 +34,7 @@
     <string name="off_mode_title">Disattivato</string>
     <string name="tile_panel_mode">Modalità schermo</string>
     <string name="tile_hbm_mode">Modalità alta luminosità</string>
+    <string name="tile_dc_mode">Modalità anti-sfarfallio</string>
     <!-- Notification slider -->
     <string name="notification_slider_category_title">Cursore notifiche</string>
     <string name="notification_slider_selection_dialog_title">Azione</string>
