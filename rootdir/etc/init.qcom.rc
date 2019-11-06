@@ -1,8 +1,6 @@
 import /system/etc/init/init.target.rc
 
 on post-fs
-    mount none /system/lib/modules/wlan.ko /vendor/lib/modules-aging/qca_cld3_wlan.ko bind
-    mount none /system/lib/modules/wlan.ko /vendor/lib/modules/qca_cld3_wlan.ko bind
     # Vibration
     chown system system /sys/class/leds/vibrator/vmax_override
     write /sys/class/leds/vibrator/vmax_override 1
