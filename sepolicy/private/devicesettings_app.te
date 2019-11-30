@@ -1,0 +1,6 @@
+type devicesettings_app, domain;
+
+app_domain(devicesettings_app)
+
+# Allow devicesettings_app to write to sysfs_leds
+allow devicesettings_app sysfs_leds:file { w_file_perms getattr };
