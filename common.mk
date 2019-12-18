@@ -142,6 +142,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.qcom:64
 
+# Priv-App permission whitelist
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-sdm845.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-sdm845.xml
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
