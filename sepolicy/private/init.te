@@ -5,5 +5,3 @@ allow init vendor_configs_file:dir mounton;
 allow init {
     sysfs_graphics
 }:file { open read setattr };
-
-permissive init;

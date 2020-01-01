@@ -89,9 +89,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
-    init.target.rc \
-    init.swap.sh \
-    msm_irqbalance.conf \
     ueventd.qcom.rc
 
 # Display
