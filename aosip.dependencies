@@ -6,10 +6,5 @@
   {
     "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus"
-  },
-  {
-    "repository"  : "LineageOS/android_packages_resources_devicesettings",
-    "target_path" : "packages/resources/devicesettings",
-    "branch"      : "lineage-17.0"
   }
 ]
