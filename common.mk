@@ -135,6 +135,10 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0:64 \
     vendor.nxp.nxpnfc@1.0:64
 
+# Placeholder
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/placeholder:system/etc/placeholder
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
