@@ -135,6 +135,14 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0:64 \
     vendor.nxp.nxpnfc@1.0:64
 
+# Vendor overlay overrides
+BUILD_PREBUILT += \
+    $(LOCAL_PATH)/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_squircle/OnePlusIconShapeSquircleOverlay.apk \
+    $(LOCAL_PATH)/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_circle/OnePlusIconShapeCircleOverlay.apk \
+    $(LOCAL_PATH)/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_teardrop/OnePlusIconShapeTeardropOverlay.apk \
+    $(LOCAL_PATH)/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_square/OnePlusIconShapeSquareOverlay.apk \
+    $(LOCAL_PATH)/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_roundedrect/OnePlusIconShapeRoundedRectOverlay.apk
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
