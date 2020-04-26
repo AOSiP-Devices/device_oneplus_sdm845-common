@@ -80,7 +80,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    vendor.oneplus.camera.CameraHIDL@1.0
 
 # Common init scripts
 PRODUCT_PACKAGES += \
