@@ -11,10 +11,10 @@
      limitations under the License.
 -->
 <resources>
-    <string name="device_title">Réglages One Plus</string>
-    <string name="device_summary">Ajuster les réglages spécifiques One Plus</string>
+    <string name="device_title">Paramètres OnePlus</string>
+    <string name="device_summary">Ajuster les paramètres spécifiques d\'appareil OnePlus </string>
     <!-- Display modes -->
-    <string name="display_title">Modes d\'affichage</string>
+    <string name="display_title">Modes d\'écran</string>
     <string name="display_summary">Ajuster les paramètres et préférences d\'affichage</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">Mode sRGB</string>
