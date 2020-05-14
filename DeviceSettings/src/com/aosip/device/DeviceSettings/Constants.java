@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
  * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2020 The Android Open Source Illusion Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,21 +36,41 @@ public class Constants {
     static final String UPDATE_PREFS_ACTION = "com.aosip.device.DeviceSettings.UPDATE_SETTINGS";
 
     // Preference keys
+    // Alert slider
     public static final String NOTIF_SLIDER_TOP_KEY = "keycode_top_position";
     public static final String NOTIF_SLIDER_MIDDLE_KEY = "keycode_middle_position";
     public static final String NOTIF_SLIDER_BOTTOM_KEY = "keycode_bottom_position";
+    // KCal
+    public static final String KCAL_ENABLED_KEY = "kcal_enabled";
+    public static final String KCAL_RED_KEY = "kcal_red";
+    public static final String KCAL_GREEN_KEY = "kcal_green";
+    public static final String KCAL_BLUE_KEY = "kcal_blue";
+    public static final String KCAL_SATURATION_KEY = "kcal_saturation";
+    public static final String KCAL_VALUE_KEY = "kcal_value";
+    public static final String KCAL_CONTRAST_KEY = "kcal_contrast";
+    public static final String KCAL_HUE_KEY = "kcal_hue";
 
     // Button prefs
+    // Alert slider
     public static final String NOTIF_SLIDER_TOP_PREF = "pref_keycode_top_position";
     public static final String NOTIF_SLIDER_MIDDLE_PREF = "pref_keycode_middle_position";
     public static final String NOTIF_SLIDER_BOTTOM_PREF = "pref_keycode_bottom_position";
 
     // Default values
+    // Alert slider
     public static final int KEY_VALUE_TOTAL_SILENCE = 0;
     public static final int KEY_VALUE_SILENT = 1;
     public static final int KEY_VALUE_PRIORTY_ONLY = 2;
     public static final int KEY_VALUE_VIBRATE = 3;
     public static final int KEY_VALUE_NORMAL = 4;
+    // KCal
+    public static final int RED_DEFAULT = 255;
+    public static final int GREEN_DEFAULT = 255;
+    public static final int BLUE_DEFAULT = 255;
+    public static final int SATURATION_DEFAULT = 255;
+    public static final int VALUE_DEFAULT = 255;
+    public static final int CONTRAST_DEFAULT = 255;
+    public static final int HUE_DEFAULT = 0;
 
     // Screen off Gesture actions
     static final int ACTION_FLASHLIGHT = 1;
@@ -63,6 +84,15 @@ public class Constants {
     static final int ACTION_NEXT_TRACK = 9;
     static final int ACTION_VOLUME_DOWN = 10;
     static final int ACTION_VOLUME_UP = 11;
+
+    // KCal sys nodes
+    public static final String KCAL_RED = "/sys/module/msm_drm/parameters/kcal_red";
+    public static final String KCAL_GREEN = "/sys/module/msm_drm/parameters/kcal_blue";
+    public static final String KCAL_BLUE = "/sys/module/msm_drm/parameters/kcal_green";
+    public static final String KCAL_SAT = "/sys/module/msm_drm/parameters/kcal_sat";
+    public static final String KCAL_VAL = "/sys/module/msm_drm/parameters/kcal_val";
+    public static final String KCAL_CONT = "/sys/module/msm_drm/parameters/kcal_cont";
+    public static final String KCAL_HUE = "/sys/module/msm_drm/parameters/kcal_hue";
 
     public static final Map<String, String> sStringKeyPreferenceMap = new HashMap<>();
     public static final Map<Integer, String> sKeyMap = new HashMap<>();
