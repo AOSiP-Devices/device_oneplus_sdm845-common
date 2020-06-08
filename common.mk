@@ -132,6 +132,14 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0:64 \
     vendor.nxp.nxpnfc@1.0:64
 
+# NGA
+PRODUCT_PACKAGES += \
+    NgaResources \
+    SystemUIGoogle
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nga.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nga.xml
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
