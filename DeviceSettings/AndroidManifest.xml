@@ -101,7 +101,7 @@
 
         <service
             android:name="com.aosip.device.DeviceSettings.DCModeTileService"
-            android:icon="@drawable/ic_dc_tile"
+            android:icon="@drawable/ic_dimming_off"
             android:label="@string/tile_dc_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
