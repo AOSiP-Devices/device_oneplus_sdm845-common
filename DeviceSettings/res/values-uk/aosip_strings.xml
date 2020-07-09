@@ -14,14 +14,14 @@
     <string name="device_title">Налаштування OnePlus</string>
     <string name="device_summary">Відрегулюйте налаштування пристрою OnePlus</string>
     <!-- Display modes -->
-    <string name="display_title">Режим екрану</string>
+    <string name="display_title">Режими екрану</string>
     <string name="display_summary">Налаштування і параметри екрана</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">Режим sRGB</string>
     <string name="hbm_mode_summary"></string>
     <string name="hbm_mode_title">Режим високої яскравості</string>
     <string name="dc_mode_summary"></string>
-    <string name="dc_mode_title">Затемнення</string>
+    <string name="dc_mode_title">DC-Dimming</string>
     <string name="dci_mode_summary"></string>
     <string name="dci_mode_title">Режим широкої колірної гами DCI-P3</string>
     <string name="wide_mode_summary"></string>
