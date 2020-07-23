@@ -11,17 +11,17 @@
      limitations under the License.
 -->
 <resources>
-    <string name="device_title">OnePlus Settings</string>
+    <string name="device_title">Pengaturan OnePlus</string>
     <string name="device_summary">Adjust OnePlus specific device settings</string>
     <!-- Display modes -->
     <string name="display_title">Display modes</string>
-    <string name="display_summary">Adjust settings and preferences for display</string>
+    <string name="display_summary">Sesuaikan Pengaturan dan Preferensi Untuk Tampilan</string>
     <string name="srgb_mode_summary"></string>
     <string name="srgb_mode_title">sRGB mode</string>
     <string name="hbm_mode_summary"></string>
     <string name="hbm_mode_title">High brightness mode</string>
     <string name="dc_mode_summary"></string>
-    <string name="dc_mode_title">DC-Dimming</string>
+    <string name="dc_mode_title">Peredupan DC</string>
     <string name="dci_mode_summary"></string>
     <string name="dci_mode_title">DCI-P3 wide colour gamut mode</string>
     <string name="wide_mode_summary"></string>
