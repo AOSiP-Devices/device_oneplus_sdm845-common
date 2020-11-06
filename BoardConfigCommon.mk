@@ -124,6 +124,9 @@ BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# TMP HAXXXXXXXXXXXXX
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 
